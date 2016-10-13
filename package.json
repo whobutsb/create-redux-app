@@ -1,0 +1,32 @@
+{
+  "name": "create-redux-app",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.6.1",
+    "redux-logger": "^2.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whobutsb/redux-create-app.git"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0"
+  },
+  "author": "Steve Barbera <me@stevebarbera.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whobutsb/create-redux-app"
+  },
+  "homepage": "https://github.com/whobutsb/create-redux-app#readme",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
