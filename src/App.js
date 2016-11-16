@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import * as appActions from './actions/app-actions';
 
 import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
 
 class App extends Component {
 
