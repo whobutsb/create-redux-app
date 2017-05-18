@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
+import logo from './logo.svg';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as appActions from './actions/app-actions';
 
-import logo from './logo.svg';
-import './css/App.css';
+import './App.css';
 
 class App extends Component {
 
-  componentWillMount() {
-
-    // props
-    console.log(this.props.app.status);
-
-    // actions
-    this.props.actions.newAction();
+  componentWillMount(){
+    this.props.appActions.newAction();
   }
 
   render() {
@@ -22,7 +17,7 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <h2>Welcome to { this.props.app.name }</h2>
         </div>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
@@ -32,16 +27,17 @@ class App extends Component {
   }
 }
 
-function mapStateToProps(state, props){
+function mapStateToProps(state){
     return {
         app: state.app
-    }
+    };
 }
 
 function mapDispatchToProps(dispatch){
     return {
-        actions: bindActionCreators(appActions, dispatch)
+        appActions: bindActionCreators(appActions, dispatch)
     }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
+
