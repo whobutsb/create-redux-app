@@ -1,5 +1,5 @@
 {
-  "name": "blah",
+  "name": "Create Redux App",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,7 +11,7 @@
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
-    "react-scripts": "0.9.5"
+    "react-scripts": "1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
